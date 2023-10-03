@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neón</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="container-background-left">
+                <!-- salida de texto -->
+                    <h2>Salida de texto</h2>
+                    <div id="outputText"></div>    
+            </div>
+            <h1>Mostrar texto en tiempo real</h1>
+            <!-- Campo de entrada de texto -->
+                <textarea name=""  cols="30" rows="10" type="text" id="inputText" placeholder="Escribe algo..." onkeyup="showText(this.value)"></textarea>
+        
+        </div>
+    </div>
+    
+    <!-- Incluye el archivo JavaScript externo -->
+    <script src="print.js"></script>
+</body>
+</html>

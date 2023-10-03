@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.container-background-left {
+    background-color: red;
+    grid-column: 1 /2;
+
+}
+
+.container-background-iz-right {
+    background-color: green;
+}
