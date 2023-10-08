@@ -8,20 +8,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="container-background-left">
-                <!-- salida de texto -->
-                    <h2>Salida de texto</h2>
-                    <div id="outputText"></div>    
-            </div>
-            <h1>Mostrar texto en tiempo real</h1>
-            <!-- Campo de entrada de texto -->
-                <textarea name=""  cols="30" rows="10" type="text" id="inputText" placeholder="Escribe algo..." onkeyup="showText(this.value)"></textarea>
         
+        <div id="container-header">
+                <h1>Mostrar texto en tiempo real</h1>
         </div>
+
+        <div id="container-contenido">
+            <div id="outputText"></div> 
+            <div class="carousel-container">
+                
+                <div class="carousel-slide">
+                    <img src="/img/arreglo-sala-estar-esterilla-yoga.jpg" alt="Imagen 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/img/vista-interior-habitacion-muebles-espacio-copiar.jpg" alt="Imagen 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/img/vista-interior-habitacion-muebles-espacio-copiar.jpg" alt="Imagen 3">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-button" onclick="prevSlide()">Anterior</button>
+                <button class="carousel-button" onclick="nextSlide()">Siguiente</button>
+            </div>    
+        </div>
+                   
+        <div id="container-lateral">
+            <!-- Campo de entrada de texto -->
+        <textarea name="" type="text" id="inputText" placeholder="Escribe algo..." onkeyup="showText(this.value)"></textarea>        
+        </div>
+
     </div>
     
     <!-- Incluye el archivo JavaScript externo -->
-    <script src="print.js"></script>
+    <script src="/js/carrusel.js"></script>
+    <script src="/js/print.js"></script>
+
 </body>
 </html>

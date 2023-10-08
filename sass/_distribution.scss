@@ -1,16 +1,28 @@
 .container {
+    width: 100vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    "header header header"
+    "contenido contenido lateral";
   }
-
-.container-background-left {
+#container-header {
     background-color: red;
-    grid-column: 1 /2;
-
+    grid-area: header;
+    height: 100px;
 }
 
-.container-background-iz-right {
+#container-lateral{
     background-color: green;
+    grid-area: lateral;
+
 }
+
+#container-contenido{
+    background-color:blue;
+    grid-area:contenido;
+}
+
+
